@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "education site for kid mainly on nursery level and primary level",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hagenimanasamuel/coder.git"
+  },
+  "author": "HAGENIMANA Samuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hagenimanasamuel/coder/issues"
+  },
+  "homepage": "https://github.com/hagenimanasamuel/coder#readme"
+}
