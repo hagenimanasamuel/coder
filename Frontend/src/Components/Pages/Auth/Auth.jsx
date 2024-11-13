@@ -1,3 +1,8 @@
 export default function AppAuth() {
-    return
+    return(
+        <>
+        <h1>Authentication Page</h1>
+        <p></p>
+        </>
+    )
 }
