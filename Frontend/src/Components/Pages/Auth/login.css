@@ -1,7 +1,123 @@
+
+
 .login-container {
     border: 1px solid;
-    width: 500px;
-    height: 600px;
     border-radius: 5px;
-    background-color: rgba(159, 159, 228, 0.425);
+    /* background-color: rgba(159, 159, 228, 0.425); */
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-container .input-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.login-container .input-container .steps {
+    gap: 10px;
+}
+
+.login-container .input-container .steps  .input-field {
+    display: flex;
+    position: relative;
+}
+
+.login-container .input-container .steps .input-field input {
+    padding: 10px 20px;
+    border: 2px solid #adadad;
+    border-radius: 0 4px 4px 4px;
+    outline: none;
+    font-size: 25px;
+}
+
+.login-container .input-container .steps .input-field input:focus {
+    border: 2px solid blue;
+}
+
+.login-container .input-container .steps  .input-field label {
+    position: absolute;
+    top: 15px;
+    font-size: 20px;
+    color: rgb(173, 173, 173);
+    font-weight: bold;
+    padding: 0 30px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.login-container .input-container .steps .input-field input:focus ~ .placeholder,
+.login-container .input-container .steps .input-field input:valid ~ .placeholder,
+.login-container .input-container .steps .input-field input:not([value=""]) ~ .placeholder  {
+    color: blue;
+    font-size: 12px;
+    border: 1px solid;
+    border-color: blue;
+    top: -12px;
+    width: fit-content;
+    background-color: white;
+}
+
+.login-container .input-container .steps .input-field input:valid {
+    border-color: green;
+}
+
+.login-container .input-container .steps .input-field input:valid ~ .placeholder {
+    border-color:green;
+    color: green;
+}
+
+.placeholder1 {
+    display: none;
+}
+
+.login-container .input-container .steps .input-field input:focus ~ .placeholder1,
+.login-container .input-container .steps .input-field input:valid ~ .placeholder1,
+.login-container .input-container .steps .input-field input:not([value=""]) ~ .placeholder1  {
+    display: flex;
+}
+
+.login-container .input-container .steps .input-field input:valid ~ .placeholder1 {
+    display: none;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+.submit-container .btn {
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(233, 233, 233);
+    border-radius: 2px;    
+}
+
+.submit-container .btn:hover, .submit-container .btn:focus {
+    background-color: rgb(209, 209, 209);    
+}
+
+.inactive-btn {
+    pointer-events: none;
+    opacity: .4;
+}
+
+.active-btn {
+    pointer-events: all;
+    opacity: 1;
+}
+
+.active {
+    display: flex;
+}
+
+.inactive {
+    display: none;
 }
